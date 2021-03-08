@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div class="imgtop">
-      <img :src="require('./assets/background-top.png')" alt="">
     </div>
     <headcomp :editable="editable" :breakcode="breakcode" v-if="breakcode"></headcomp>
     <main>
@@ -16,7 +15,6 @@
     </main>
     <footercomp :editable="editable" :breakcode="breakcode" v-if="breakcode"></footercomp>
     <div class="imgbottom">
-      <img :src="require('./assets/background-bottom.png')" alt="">
     </div>
   </div>
 </template>
@@ -161,7 +159,11 @@ export default {
     z-index: -10;
     position: absolute;
     top: 0;
-    z-index: -10;
+    background-image: url('./assets/background-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 950px;
+    width: 100%;
   }
   body {
     background-color: $body-color;
@@ -174,8 +176,13 @@ export default {
     color: $text-dark;
   }
   .imgbottom {
-    position: absolute;
     z-index: -10;
+    position: absolute;
     bottom: 0;
+    background-image: url('./assets/background-bottom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 950px;
+    width: 100%;
   }
 </style>
