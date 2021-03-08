@@ -44,14 +44,6 @@ export default {
 </script>
 <style scoped lang="scss">
   .footerclass {
-    background-image: url('../assets/background-bottom.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -5;
-    height: 1000px;
-    width: 100%;
-    position: relative;
-    top: -1100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

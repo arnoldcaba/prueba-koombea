@@ -4,7 +4,7 @@
       <img :src="require('../assets/logo-head.svg')" alt="" class="navicon">
       <div class="spaceBetween" v-if="['md', 'lg', 'xl'].includes(breakcode)">
         <nav>
-          <ul>s
+          <ul>
             <li>
               <a href="#">Products</a>
             </li>
@@ -42,7 +42,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-  .headclass {
+  /* .headclass {
     background-image: url('../assets/background-top.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,7 +52,7 @@ export default {
     width: 100%;
     top: 0px;
     left: 0px;
-  }
+  } */
   .navicon {
     margin-right: 12px;
   }

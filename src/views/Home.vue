@@ -130,10 +130,6 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-  article {
-    margin-top: 180px;
-    margin-bottom: 180px;
-  }
   .menu_edit {
     background: white;
     top: 0;

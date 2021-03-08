@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="imgtop">
+      <img :src="require('./assets/background-top.png')" alt="">
+    </div>
     <headcomp :editable="editable" :breakcode="breakcode" v-if="breakcode"></headcomp>
     <main>
       <home
@@ -12,6 +15,9 @@
         :key="keyComponents"/>
     </main>
     <footercomp :editable="editable" :breakcode="breakcode" v-if="breakcode"></footercomp>
+    <div class="imgbottom">
+      <img :src="require('./assets/background-bottom.png')" alt="">
+    </div>
   </div>
 </template>
 <script>
@@ -148,6 +154,15 @@ export default {
 }
 </script>
 <style lang="scss">
+  #app {
+    position: relative;
+  }
+  .imgtop {
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+  }
   body {
     background-color: $body-color;
     font-family: Roboto;
@@ -157,5 +172,10 @@ export default {
     line-height: 27px;
     letter-spacing: 0em;
     color: $text-dark;
+  }
+  .imgbottom {
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
   }
 </style>
