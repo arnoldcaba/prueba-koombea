@@ -1,0 +1,237 @@
+// variables
+$text-dark: #8794BA;
+$text-white: #FFFFFF;
+$text-darker: #172755;
+$card-color: #0F1F4B;
+$body-color: #EEEEF7;
+// ----------------------
+
+// colors
+$accent: #EF2A82;
+// ----------------------
+
+// tags
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: $body-color;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: $text-dark;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline:0;
+}
+
+// Elements
+.title-1 {
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 60px;
+  letter-spacing: 0em;
+}
+.title-2 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+}
+.outlined {
+  background: none;
+  color: $text-dark;
+  border: 1px solid $text-dark;
+  padding: 5px 25px 5px 25px;
+  border-radius: 50px;
+}
+.red_button {
+  border:none;
+  height: 50px;
+  width: 238px;
+  left: 0px;
+  top: 265px;
+  border-radius: 68px;
+  padding: 10px 80px 10px 80px;
+  background: $accent;
+  color: white;
+}
+.card {
+  height: 350px;
+  left: 0px;
+  top: 0px;
+  border-radius: 30px;
+  padding: 30px;
+  background: $card-color;
+  opacity: 0,7%;
+}
+.card:hover {
+  height: 350px;
+  left: 0px;
+  top: 0px;
+  border-radius: 30px;
+  padding: 30px;
+  background: $text-white;
+  opacity: 0,7%;
+  .outlined {
+    border:none;
+    border-radius: 50px;
+    padding: 10px 60px 10px 60px;
+    background: $accent;
+    color: $text-white;
+  }
+  .title-1, .title-2{
+    color: $text-darker;
+  }
+}
+// -------------------------------
+
+// clases generales
+.h_space_between {
+  display: flex;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+}
+.horizontal_center {
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.basetext {
+  //styleName: text / body;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: $text-dark;
+}
+.caption {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center; 
+}
+.bold {
+    font-weight: bold;
+}
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.align-left {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+.justify-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.justify-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.justify-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.justify-spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: $text-white;
+}
+.text-dark {
+  color: $text-dark;
+}
+.text-darker {
+  color: $text-darker;
+}
+.text-accent {
+  color: $accent;
+}
+
+@media (max-width: 650px) {
+  aside {
+    display: none;
+  }
+  .row {
+    display: block;
+  }
+  #prices .title-1 {
+    color:$text-darker;
+  }
+  #prices .card .title-1  {
+    color:$text-white;
+  }
+  #prices .card:hover  {
+    .title-1 {
+      color:$text-darker;
+    }
+  }
+
+}
+@media (max-width: 950px) {
+  aside {
+    display: none;
+  }
+  #prices .title-1 {
+    color:$text-darker; 
+  }
+  #prices .card .title-1  {
+    color:$text-white;
+  }
+  #prices .card:hover  {
+    .title-1 {
+      color:$text-darker;
+    }
+  }
+  .row {
+    display: block;
+  }
+}
+@media (max-width: 1264px) {
+  aside {
+    display: none;
+  }
+}

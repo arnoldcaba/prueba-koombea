@@ -1,0 +1,105 @@
+$small: 100px;
+$medium: 150px;
+$big: 200px;
+
+
+@mixin circle ($x, $radius) {
+  width: $x;
+  height: $x;
+  border-radius: $radius;
+  
+  @if $x == $small {
+    background-color: rgb(255, 108, 108);
+  }
+  @else if $x == $medium {
+    background-color: rgb(67, 185, 126);
+  } 
+  @else {
+    background-color: rgb(216, 245, 55);
+  }
+}
+
+// generacion de sistema de columnas
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 100%/12 * $i;
+  }
+}
+
+// generacion de espaciado margin-top
+@for $i from 1 through 5 {
+  .mt-#{$i} {
+    margin-top: 20px * $i;
+  }
+}
+// generacion de espaciado margin-bottom
+@for $i from 1 through 5 {
+  .mb-#{$i} {
+    margin-bottom: 20px * $i;
+  }
+}
+// generacion de espaciado margin-left
+@for $i from 1 through 5 {
+  .ml-#{$i} {
+    margin-left: 20px * $i;
+  }
+}
+// generacion de espaciado margin-right
+@for $i from 1 through 5 {
+  .mr-#{$i} {
+    margin-right: 20px * $i;
+  }
+}
+// generacion de espaciado padding-top
+@for $i from 1 through 5 {
+  .pt-#{$i} {
+    padding-top: 20px * $i;
+  }
+}
+// generacion de espaciado padding-bottom
+@for $i from 1 through 5 {
+  .pb-#{$i} {
+    padding-bottom: 20px * $i;
+  }
+}
+// generacion de espaciado padding-left
+@for $i from 1 through 5 {
+  .pl-#{$i} {
+    padding-left: 20px * $i;
+  }
+}
+// generacion de espaciado padding-right
+@for $i from 1 through 5 {
+  .pr-#{$i} {
+    padding-right: 20px * $i;
+  }
+}
+
+@media (max-width: 650px) {
+  .col-4 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .col-6 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .row {
+    flex-wrap: wrap
+  }
+}
+
+@media (max-width: 950px) {
+  .col-4 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .col-6 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1264px) {
+
+}
